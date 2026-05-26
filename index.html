@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laziko Shop — Премиум Игрушки Brawl Stars</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Montserrat:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        .font-brawl { font-family: 'Luckiest Guy', cursive; }
+        .font-main { font-family: 'Montserrat', sans-serif; }
+        .red-glow { box-shadow: 0 0 25px rgba(239, 68, 68, 0.6); }
+        .text-glow { text-shadow: 0 0 12px rgba(239, 68, 68, 0.7); }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white font-main selection:bg-red-600 selection:text-white">
+
+    <header class="sticky top-0 z-50 bg-zinc-900/90 backdrop-blur-md border-b border-red-600/30">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-3">
+                <img src="database/image.jpg" alt="Laziko Logo" class="w-12 h-12 rounded-xl border border-red-500 red-glow object-cover">
+                <span class="text-2xl font-brawl tracking-wider text-red-500 text-glow">LAZIKO</span>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8 font-bold text-sm tracking-wide">
+                <a href="#catalog" class="hover:text-red-500 transition-colors">КАТАЛОГ</a>
+                <a href="#stats" class="hover:text-red-500 transition-colors">СТАТИСТИКА</a>
+                <a href="#contacts" class="hover:text-red-500 transition-colors">КОНТАКТЫ</a>
+            </nav>
+
+            <a href="https://t.me/abduakhatov" target="_blank" class="bg-red-600 hover:bg-red-700 text-white px-5 py-2 rounded-lg font-bold text-sm tracking-wider transition-all transform hover:scale-105 shadow-lg shadow-red-600/30">
+                КУПИТЬ
+            </a>
+        </div>
+    </header>
+
+    <section class="relative bg-gradient-to-b from-zinc-900 to-zinc-950 py-24 overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(220,38,38,0.2)_0%,transparent_70%)]"></div>
+        <div class="container mx-auto px-4 text-center relative z-10">
+            <span class="bg-red-600/10 text-red-500 border border-red-600/30 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">
+                Эксклюзивные и дешевые товары по играм в Узбекистане
+            </span>
+            <h1 class="text-5xl md:text-7xl font-brawl tracking-wide mt-6 mb-4 text-glow">
+                МАГАЗИН ИГРУШЕК <span class="text-red-500">BRAWL STARS</span>
+            </h1>
+            <p class="text-zinc-400 max-w-xl mx-auto text-sm md:text-base mb-8">
+                Оригинальное премиум-качество. Коллекционные плюшевые бравлеры для настоящих фанатов.
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="#catalog" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-xl transition-all transform hover:scale-105 red-glow">
+                    Открыть каталог
+                </a>
+                <a href="https://t.me/mrlazikoo" target="_blank" class="bg-zinc-800 hover:bg-zinc-700 text-white font-bold px-8 py-3.5 rounded-xl border border-zinc-700 transition-all">
+                    Наш Telegram
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="stats" class="bg-zinc-900 border-y border-zinc-800 py-10">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4 bg-zinc-950/40 rounded-xl border border-zinc-800/50">
+                    <div class="text-4xl md:text-5xl font-brawl text-red-500 mb-1" id="client-count">Ютубер</div>
+                    <div class="text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-wider">Уже 2 года</div>
+                </div>
+                <div class="p-4 bg-zinc-950/40 rounded-xl border border-zinc-800/50">
+                    <div class="text-4xl md:text-5xl font-brawl text-white mb-1">100%</div>
+                    <div class="text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-wider">Премиум Оригинал</div>
+                </div>
+                <div class="p-4 bg-zinc-950/40 rounded-xl border border-zinc-800/50">
+                    <div class="text-4xl md:text-5xl font-brawl text-white mb-1">Direct</div>
+                    <div class="text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-wider">Связь без посредников</div>
+                </div>
+                <div class="p-4 bg-zinc-950/40 rounded-xl border border-zinc-800/50">
+                    <div class="text-4xl md:text-5xl font-brawl text-red-500 mb-1">UZS</div>
+                    <div class="text-[10px] md:text-xs text-zinc-400 font-bold uppercase tracking-wider">Расчет в сумах</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalog" class="py-20 container mx-auto px-4">
+        <div class="text-center mb-16">
+            <h2 class="text-3xl md:text-5xl font-brawl tracking-wider mb-4">КОЛЛЕКЦИЯ <span class="text-red-500">PREMIUM</span></h2>
+            <div class="w-24 h-1 bg-red-600 mx-auto rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-red-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-zinc-800 aspect-square overflow-hidden flex items-center justify-center p-6">
+                        <span class="absolute text-8xl opacity-5 font-brawl select-none">SPIKE</span>
+                        <div class="w-48 h-48 bg-emerald-600 rounded-full blur-3xl opacity-20 absolute"></div>
+                        <span class="text-7xl z-10 filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">🌵</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-emerald-400 tracking-widest uppercase bg-emerald-400/10 px-2.5 py-1 rounded-md">Легендарный</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2">Мягкая игрушка Спайк</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed">Лимитированное издание.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-zinc-800/50 mt-4">
+                    <div>
+                        <div class="text-[10px] text-zinc-500 font-bold uppercase">Цена</div>
+                        <div class="text-xl font-brawl text-red-500 tracking-wide">50 000 сум</div>
+                    </div>
+                    <a href="https://t.me/abduakhatov" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider transition-colors">Купить</a>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-red-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-zinc-800 aspect-square overflow-hidden flex items-center justify-center p-6">
+                        <span class="absolute text-8xl opacity-5 font-brawl select-none">LEON</span>
+                        <div class="w-48 h-48 bg-green-500 rounded-full blur-3xl opacity-20 absolute"></div>
+                        <span class="text-7xl z-10 filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">🦎</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-green-400 tracking-widest uppercase bg-green-400/10 px-2.5 py-1 rounded-md">Легендарный</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2">Мягкая игрушка Леон Premium</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed">Огромная детализированная игрушка в легендарном худи.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-zinc-800/50 mt-4">
+                    <div>
+                        <div class="text-[10px] text-zinc-500 font-bold uppercase">Цена</div>
+                        <div class="text-xl font-brawl text-red-500 tracking-wide">65 000 сум</div>
+                    </div>
+                    <a href="https://t.me/abduakhatov" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider transition-colors">Купить</a>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900 border border-zinc-800 rounded-2xl overflow-hidden hover:border-red-600/50 transition-all group flex flex-col justify-between">
+                <div>
+                    <div class="relative bg-zinc-800 aspect-square overflow-hidden flex items-center justify-center p-6">
+                        <span class="absolute text-8xl opacity-5 font-brawl select-none">PRIMO</span>
+                        <div class="w-48 h-48 bg-blue-600 rounded-full blur-3xl opacity-20 absolute"></div>
+                        <span class="text-7xl z-10 filter drop-shadow-[0_10px_10px_rgba(0,0,0,0.5)]">💪</span>
+                    </div>
+                    <div class="p-6">
+                        <span class="text-xs font-bold text-blue-400 tracking-widest uppercase bg-blue-400/10 px-2.5 py-1 rounded-md">Редкий</span>
+                        <h3 class="text-xl font-bold mt-4 mb-2">Игрушка Эль Примо (Эксклюзив)</h3>
+                        <p class="text-xs text-zinc-400 leading-relaxed">Плюшевый боец.</p>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 flex items-center justify-between border-t border-zinc-800/50 mt-4">
+                    <div>
+                        <div class="text-[10px] text-zinc-500 font-bold uppercase">Цена</div>
+                        <div class="text-xl font-brawl text-red-500 tracking-wide">40 000 сум</div>
+                    </div>
+                    <a href="https://t.me/abduakhatov" target="_blank" class="bg-red-600 hover:bg-red-700 text-white font-bold text-xs px-5 py-3 rounded-xl uppercase tracking-wider transition-colors">Купить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contacts" class="bg-zinc-950 border-t border-zinc-800 py-16">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0">
+                
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start space-x-3 mb-4">
+                        <img src="database/image.jpg" alt="Laziko Logo" class="w-10 h-10 rounded-lg object-cover">
+                        <span class="text-xl font-brawl tracking-wider text-red-500">LAZIKO</span>
+                    </div>
+                    <p class="text-xs text-zinc-500">© 2026 Laziko Shop. Все права защищены.</p>
+                    <p class="text-[10px] text-zinc-600 mt-1">Официальная премиум-продукция.</p>
+                </div>
+
+                <div class="flex flex-col items-center md:items-end space-y-4">
+                    <div class="text-xs font-bold text-zinc-400 tracking-wider uppercase">Официальные контакты & Каналы:</div>
+                    <div class="flex flex-wrap justify-center gap-3">
+                        <a href="https://t.me/abduakhatov" target="_blank" class="bg-red-600/10 hover:bg-red-600 border border-red-600/30 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-colors flex items-center space-x-2">
+                            <span>💬 Личка ТГ: @abduakhatov</span>
+                        </a>
+                         <a href="https://t.me/lazikoshop" target="_blank" class="bg-zinc-900 hover:bg-red-600 border border-zinc-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-colors flex items-center space-x-2">
+                            <span>Больше товаров</span>
+                        </a>
+                        <a href="https://t.me/mrlazikoo" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-colors flex items-center space-x-2">
+                            <span>📢 Канал: @mrlazikoo</span>
+                        </a>
+                        <a href="https://youtube.com/@mrlazikoo" target="_blank" class="bg-zinc-900 hover:bg-red-600 border border-zinc-800 text-white text-xs font-bold px-4 py-2.5 rounded-xl transition-colors flex items-center space-x-2">
+                            <span>🎥 YouTube: Mrlazikoo</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
